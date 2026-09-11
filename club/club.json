@@ -14,6 +14,12 @@
   "allocationUrl": "",
   "pitchMap": "pitch-map.svg",
 
+  "_source": "Optional. Puts a one-line strip above every page header, crediting where the site is built from — it is set here because this repository publishes its own example site. DELETE IT for your club, or repoint it at your own fork; nothing else depends on it.",
+  "source": {
+    "text": "An example site built with",
+    "url": "https://github.com/mcroker/claude-rugby-plans"
+  },
+
   "_site": "The landing page at the root of the domain, above the per-team sites.",
   "site": {
     "title": "Riverside RFC Age-Grade Coaching",
