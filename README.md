@@ -4,6 +4,8 @@ A small static-site generator for a rugby club's coaching material. You write ma
 
 It ships with sensible defaults for the generic parts of coaching (how sessions are structured, a player-led warm-up, a bank of games and drills, the RFU age-grade laws), so a new team starts with something rather than nothing and overrides only what it wants to change.
 
+**→ [See the example site](https://mcroker.github.io/claude-rugby-plans/)** — this repository, built and published. It's the `teams/example-u14/` folder, so everything on it is invented; [the session page](https://mcroker.github.io/claude-rugby-plans/example-u14/block1-week1-sun.html) is the one worth opening, next to [the markdown that produced it](teams/example-u14/plans/block1-week1-sun.md).
+
 ## What you get
 
 - **A page per session** — objective at the top, logistics folded away, then the run sheet as a **timeline**: time down the page, and a stretch where the squad splits into parallel columns. Each block carries only what you need to run it, with a **Details** button for the rest.
@@ -16,7 +18,7 @@ It ships with sensible defaults for the generic parts of coaching (how sessions 
 
 1. **Fork this repository.**
 2. **Settings → Pages → Source: GitHub Actions.**
-3. Set up your club and first team. If you use [Claude Code](https://claude.ai/code), the repo ships skills for this — run `/setup-club`, then `/new-team`. Otherwise follow [`.claude/skills/setup-club/SKILL.md`](.claude/skills/setup-club/SKILL.md) by hand; it's a short checklist.
+3. Set up your club and first team. If you use [Claude Code](https://claude.ai/code), the repo ships skills for this — run `/setup-club`, then `/new-team`. Otherwise follow [`.claude/skills/setup-club/SKILL.md`](.claude/skills/setup-club/SKILL.md) by hand; it's a short checklist. Either way it starts by clearing out `teams/example-u14/` and the example club, which would otherwise publish as a team of their own.
 4. Push. The workflow builds and deploys.
 
 To preview locally — **no install step, no dependencies**:
