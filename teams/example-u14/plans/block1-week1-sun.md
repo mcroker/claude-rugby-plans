@@ -42,10 +42,11 @@ Out before the players arrive, and nothing gets re-coned all session.
 | +22, 18 min | Tackle base position | The skill zone: feet, chest, eyes. |
 | +40, 5 min | Water and swap | On the back of the team swap. |
 | +45, 25 min | Two-Second Touch | The game — recycle speed, counted out loud. |
+| +45, 25 min *(parallel pull-out)* | Tackle pull-out | Five at a time, five minutes each, straight back in. |
 | +70, 15 min | Two-Second Touch — narrowed | Same game, less space. |
 | +85, 5 min | Close | What we did, what's next Thursday. |
 
-**Coach allocation.** One coach coordinates and does not run an activity. Two on the tackle zone, one on each station. One on the game throughout, so the conditions stay consistent when the squad comes back to it.
+**Coach allocation.** One coach coordinates and does not run an activity. Two on the tackle zone at +22, one on each station. From +45: one on the game throughout, so the conditions stay consistent, and one on the pull-out, calling groups out and sending them back.
 
 ## Activities
 
@@ -124,6 +125,34 @@ Touch rugby. On a touch the carrier goes to ground and presents the ball back; a
 - Defence overrunning: require two defenders to stay behind the ball.
 - Numbers uneven: the short side gets an extra touch before a turnover.
 
+### Tackle pull-out
+
+**Groups:** five at a time, out of the game and straight back in.
+
+**Setup:** Nothing new — the mats are already down from the skill zone. Call the next five while the previous five are still walking back.
+
+**Coaching Points:** One fix per player, named out loud before they go back on. Feet, chest or eyes — not all three.
+
+**Description:**
+
+1. Call five out; the game plays on a player short each side.
+2. Three live tackles each, walking pace, off the mat.
+3. Name the one thing each player is fixing.
+4. Send them back; call the next five.
+
+Five minutes a group, five groups across the 25.
+
+**Progressions:**
+
+- Second time a group comes out, tackle at a jog rather than walking pace.
+- Tackler gets straight up into a defensive position after the third tackle.
+
+**Adaptations:**
+
+- Game getting thin: pull three at a time instead of five.
+- A player who needs longer: keep them out for a second stint rather than slowing the group.
+- Only two coaches out: drop the pull-out and run the tackle work sequentially instead — this split needs a coach who is not watching the game.
+
 ### Two-Second Touch — narrowed
 
 **Groups:** the same two teams, on two-thirds of the pitch.
@@ -139,6 +168,7 @@ Touch rugby. On a touch the carrier goes to ground and presents the ball back; a
 - **This is example content.** The session is invented; it exists to show the shape of a run-sheet and what each part of the template turns into on the page. Compare this file with the page it produces.
 - The warm-up entry on the page is **generated** from `warmup.md` — don't write one here.
 - Every Activities entry title matches its row in the Plan table. That match is how a timeline block gets its Groups, Set up and Call, and its Details button.
+- **Two rows share the `+45` start time**, so the timeline draws them side by side as parallel columns. That is the only thing that marks the squad splitting — there is no other syntax for it. The italic `*(parallel pull-out)*` after the time becomes the tag on the block, and is just a label; it is the shared start time doing the work.
 
 ## Review
 
