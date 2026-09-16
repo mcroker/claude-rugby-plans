@@ -53,13 +53,11 @@ Calls are **one word**, said loudly, and mean the same thing every time. Nobody 
 
 ### Lineout
 
-Three calls, and they are colours so nobody has to remember a number under pressure:
+Three calls, and each one says where the ball goes, so nobody has to remember a code under pressure:
 
-| Call | Where the ball goes |
-|---|---|
-| **Blue** | Front |
-| **White** | Middle |
-| **Green** | Back |
+- **Front**
+- **Middle**
+- **Back**
 
 The hooker calls it, and calls it late. Catch, turn, ball to 9 — no maul off this at our age group unless we are inside their 22.
 
