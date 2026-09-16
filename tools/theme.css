@@ -1,5 +1,5 @@
 /* U14 Rugby coaching reference — design tokens
-   Palette grounded in the club's own blue/white/gold colours.
+   Palette grounded in the club's own colours.
    Display: Oswald (condensed, matchday-programme/scoreboard feel)
    Body: Public Sans (clean, human, not a display face)
 */
@@ -12,10 +12,10 @@
   --paper: #f6f4ec;
   --surface: #ffffff;
   --border: #ddd6c2;
-  --blue: #1d3f72;
-  --blue-tint: #e9eef7;
-  --gold: #a8791f;
-  --gold-tint: #f6ecd6;
+  --primary: #1d3f72;
+  --primary-tint: #e9eef7;
+  --accent: #a8791f;
+  --accent-tint: #f6ecd6;
   --rule: #cdbf8f;
   --warn: #a33417;
   --warn-tint: #fbe8e2;
@@ -34,10 +34,10 @@
     --paper: #12151c;
     --surface: #1a1e27;
     --border: #333a48;
-    --blue: #7ea3e0;
-    --blue-tint: #1c2a42;
-    --gold: #e0b45c;
-    --gold-tint: #332a14;
+    --primary: #7ea3e0;
+    --primary-tint: #1c2a42;
+    --accent: #e0b45c;
+    --accent-tint: #332a14;
     --rule: #5a5030;
     --warn: #f0906f;
     --warn-tint: #3a1a11;
@@ -51,10 +51,10 @@
   --paper: #12151c;
   --surface: #1a1e27;
   --border: #333a48;
-  --blue: #7ea3e0;
-  --blue-tint: #1c2a42;
-  --gold: #e0b45c;
-  --gold-tint: #332a14;
+  --primary: #7ea3e0;
+  --primary-tint: #1c2a42;
+  --accent: #e0b45c;
+  --accent-tint: #332a14;
   --rule: #5a5030;
   --warn: #f0906f;
   --warn-tint: #3a1a11;
@@ -76,8 +76,8 @@ body {
 .wrap { max-width: var(--page-width); margin: 0 auto; padding: 28px 24px 90px; }
 
 header.page-head {
-  background: var(--blue);
-  border-bottom: 4px solid var(--gold);
+  background: var(--primary);
+  border-bottom: 4px solid var(--accent);
 }
 header.page-head .inner { max-width: var(--page-width); margin: 0 auto; padding: 30px 24px 22px; }
 header.page-head h1 {
@@ -89,19 +89,19 @@ header.page-head h1 {
   text-wrap: balance;
   color: #ffffff;
 }
-header.page-head .sub { color: var(--gold-tint); opacity: 0.92; font-size: 0.96rem; }
+header.page-head .sub { color: var(--accent-tint); opacity: 0.92; font-size: 0.96rem; }
 header.page-head .sub2 { color: #ffffff; opacity: 0.72; font-size: 0.88rem; margin-top: 2px; }
 nav.crumb { font-size: 0.82rem; margin-top: 12px; }
-nav.crumb a { color: var(--gold-tint); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.35); }
-nav.crumb a:hover { border-color: var(--gold-tint); }
+nav.crumb a { color: var(--accent-tint); text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.35); }
+nav.crumb a:hover { border-color: var(--accent-tint); }
 
-h1 { font-family: "Oswald", sans-serif; font-weight: 600; color: var(--blue); text-wrap: balance; }
+h1 { font-family: "Oswald", sans-serif; font-weight: 600; color: var(--primary); text-wrap: balance; }
 h2 {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-size: 1.28rem;
   letter-spacing: 0.01em;
-  color: var(--blue);
+  color: var(--primary);
   margin-top: 2.4em;
   padding-bottom: 0.4em;
   border-bottom: 2px dashed var(--rule);
@@ -116,7 +116,7 @@ h3 {
 }
 h4 { font-weight: 600; font-size: 0.98rem; color: var(--ink-soft); margin-top: 1.4em; }
 p { margin: 0.85em 0; max-width: var(--prose); }
-a { color: var(--blue); }
+a { color: var(--primary); }
 strong { color: var(--ink); font-weight: 600; }
 em { color: var(--muted); }
 
@@ -125,8 +125,8 @@ table { border-collapse: collapse; width: 100%; margin: 0; font-size: 0.9rem; fo
 .table-scroll table { margin: 0; border: none; }
 th, td { border-bottom: 1px solid var(--border); padding: 9px 12px; text-align: left; vertical-align: top; }
 th {
-  background: var(--blue-tint);
-  color: var(--blue);
+  background: var(--primary-tint);
+  color: var(--primary);
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   letter-spacing: 0.03em;
@@ -137,21 +137,21 @@ tr:last-child td { border-bottom: none; }
 tr:nth-child(even) td { background: color-mix(in srgb, var(--surface) 60%, var(--paper) 40%); }
 
 img { max-width: 100%; border-radius: 8px; border: 1px solid var(--border); display: block; margin: 0.7em 0; }
-blockquote { border-left: 3px solid var(--gold); margin: 1em 0; padding: 0.3em 1.1em; color: var(--muted); background: var(--gold-tint); border-radius: 0 6px 6px 0; }
+blockquote { border-left: 3px solid var(--accent); margin: 1em 0; padding: 0.3em 1.1em; color: var(--muted); background: var(--accent-tint); border-radius: 0 6px 6px 0; }
 ul, ol { padding-left: 1.4em; }
 ul, ol { max-width: var(--prose); }
 li { margin: 0.4em 0; }
-code { background: var(--blue-tint); color: var(--blue); padding: 0.1em 0.4em; border-radius: 4px; font-size: 0.87em; }
+code { background: var(--primary-tint); color: var(--primary); padding: 0.1em 0.4em; border-radius: 4px; font-size: 0.87em; }
 hr { border: none; border-top: 1px dashed var(--rule); margin: 2.2em 0; }
 
 footer.page-foot {
   max-width: var(--page-width); margin: 0 auto; padding: 22px 24px 60px;
   color: var(--muted); font-size: 0.82rem; border-top: 1px solid var(--border);
 }
-footer.page-foot a { color: var(--blue); }
+footer.page-foot a { color: var(--primary); }
 
 .badge {
-  display: inline-block; background: var(--gold); color: #2a2005;
+  display: inline-block; background: var(--accent); color: #2a2005;
   font-family: "Oswald", sans-serif; font-weight: 500;
   font-size: 0.68rem; letter-spacing: 0.03em; text-transform: uppercase;
   padding: 3px 9px; border-radius: 3px; margin-left: 8px; vertical-align: middle;
@@ -159,8 +159,8 @@ footer.page-foot a { color: var(--blue); }
 
 /* A table row flagged with %% in its first cell — newly-available dates. */
 tr.row-new td {
-  background: var(--gold-tint);
-  box-shadow: inset 3px 0 0 var(--gold);
+  background: var(--accent-tint);
+  box-shadow: inset 3px 0 0 var(--accent);
 }
 tr.row-new td:first-child { font-weight: 600; }
 
@@ -176,9 +176,9 @@ tr.row-new td:first-child { font-weight: 600; }
 .seg-time::before {
   content: ""; position: absolute; left: -7px; top: 15px;
   width: 10px; height: 10px; border-radius: 50%;
-  background: var(--blue); border: 2px solid var(--paper);
+  background: var(--primary); border: 2px solid var(--paper);
 }
-.seg-time .at { display: block; font-weight: 600; color: var(--blue); font-size: 0.95rem; }
+.seg-time .at { display: block; font-weight: 600; color: var(--primary); font-size: 0.95rem; }
 .seg-time .dur { display: block; color: var(--muted); font-size: 0.76rem; letter-spacing: 0.03em; }
 
 /* One column when the squad is together; N columns when things run at once.
@@ -191,12 +191,12 @@ tr.row-new td:first-child { font-weight: 600; }
   background: var(--surface); border: 1px solid var(--border);
   border-radius: 8px; padding: 10px 12px; min-width: 0;
 }
-.seg-split .track { border-style: dashed; background: var(--blue-tint); }
+.seg-split .track { border-style: dashed; background: var(--primary-tint); }
 .track-title { font-weight: 600; color: var(--ink); line-height: 1.3; overflow-wrap: anywhere; }
 .track-tag {
   display: inline-block; margin-top: 4px;
   font-family: "Oswald", sans-serif; font-size: 0.66rem; letter-spacing: 0.05em;
-  text-transform: uppercase; color: var(--gold);
+  text-transform: uppercase; color: var(--accent);
   border: 1px solid var(--rule); border-radius: 3px; padding: 1px 5px;
 }
 .track-note {
@@ -209,11 +209,11 @@ tr.row-new td:first-child { font-weight: 600; }
 .map-btn {
   margin-left: 8px; vertical-align: baseline; cursor: pointer;
   font-family: "Oswald", sans-serif; font-size: 0.66rem; letter-spacing: 0.06em;
-  text-transform: uppercase; color: var(--blue);
+  text-transform: uppercase; color: var(--primary);
   background: var(--surface); border: 1px solid var(--rule);
   border-radius: 4px; padding: 2px 8px;
 }
-.map-btn:hover { border-color: var(--blue); background: var(--blue-tint); }
+.map-btn:hover { border-color: var(--primary); background: var(--primary-tint); }
 /* The map itself lives here only so the modal has something to clone. */
 .offscreen { display: none !important; }
 dialog.detail figure.pitchmap { margin: 0.4em 0; max-width: 100%; }
@@ -223,8 +223,8 @@ dialog.detail figure.pitchmap { margin: 0.4em 0; max-width: 100%; }
    The tint gives the eye a line to track at that width. */
 p.objective {
   max-width: none;
-  background: var(--blue-tint);
-  border-left: 3px solid var(--blue);
+  background: var(--primary-tint);
+  border-left: 3px solid var(--primary);
   border-radius: 0 8px 8px 0;
   padding: 12px 16px;
   margin: 0.4em 0 1.3em;
@@ -241,7 +241,7 @@ details.logistics {
 details.logistics > summary {
   cursor: pointer; list-style: none; padding: 11px 14px;
   font-family: "Oswald", sans-serif; font-weight: 500; font-size: 0.82rem;
-  letter-spacing: 0.05em; text-transform: uppercase; color: var(--blue);
+  letter-spacing: 0.05em; text-transform: uppercase; color: var(--primary);
   display: flex; align-items: center; gap: 8px;
 }
 details.logistics > summary::-webkit-details-marker { display: none; }
@@ -259,11 +259,11 @@ details.logistics .pad-body > :last-child { margin-bottom: 0; }
 .acc-tools { display: flex; gap: 8px; margin: 1em 0 0.9em; }
 .acc-tools button {
   font-family: "Oswald", sans-serif; font-size: 0.72rem; letter-spacing: 0.05em;
-  text-transform: uppercase; cursor: pointer; color: var(--blue);
+  text-transform: uppercase; cursor: pointer; color: var(--primary);
   background: transparent; border: 1px solid var(--rule);
   border-radius: 4px; padding: 5px 11px;
 }
-.acc-tools button:hover { border-color: var(--blue); background: var(--blue-tint); }
+.acc-tools button:hover { border-color: var(--primary); background: var(--primary-tint); }
 
 details.activity {
   border: 1px solid var(--border); border-radius: 8px;
@@ -272,7 +272,7 @@ details.activity {
 details.activity > summary {
   cursor: pointer; list-style: none; padding: 11px 14px;
   font-family: "Oswald", sans-serif; font-weight: 600; font-size: 0.98rem;
-  color: var(--blue); display: flex; align-items: center; gap: 10px;
+  color: var(--primary); display: flex; align-items: center; gap: 10px;
 }
 details.activity > summary::-webkit-details-marker { display: none; }
 details.activity > summary::after {
@@ -283,7 +283,7 @@ details.activity[open] > summary::after { content: "\2212"; }
 details.activity[open] > summary { border-bottom: 1px solid var(--border); }
 details.activity > :not(summary) { margin-left: 14px; margin-right: 14px; }
 details.activity > :last-child { margin-bottom: 12px; }
-details.activity:target { border-color: var(--blue); box-shadow: 0 0 0 2px var(--blue-tint); }
+details.activity:target { border-color: var(--primary); box-shadow: 0 0 0 2px var(--primary-tint); }
 
 /* Track head: title plus a deep link into the full plan. */
 .track-head { display: flex; align-items: flex-start; gap: 8px; }
@@ -293,7 +293,7 @@ details.activity:target { border-color: var(--blue); box-shadow: 0 0 0 2px var(-
   width: 15px; height: 15px; fill: none; stroke: var(--muted);
   stroke-width: 2; stroke-linecap: round;
 }
-.track-link:hover svg { stroke: var(--blue); }
+.track-link:hover svg { stroke: var(--primary); }
 .track-run { color: var(--muted); font-size: 0.84rem; line-height: 1.4; margin-top: 5px; overflow-wrap: anywhere; }
 .track-run b { color: var(--ink-soft); font-weight: 600; }
 
@@ -301,10 +301,10 @@ details.activity:target { border-color: var(--blue); box-shadow: 0 0 0 2px var(-
 .track-details {
   margin-top: 8px; font-family: "Oswald", sans-serif; font-size: 0.72rem;
   letter-spacing: 0.06em; text-transform: uppercase; cursor: pointer;
-  color: var(--blue); background: transparent;
+  color: var(--primary); background: transparent;
   border: 1px solid var(--rule); border-radius: 4px; padding: 4px 10px;
 }
-.track-details:hover { border-color: var(--blue); background: var(--blue-tint); }
+.track-details:hover { border-color: var(--primary); background: var(--primary-tint); }
 
 dialog.detail {
   width: min(640px, calc(100vw - 32px)); max-height: 82vh; padding: 0;
@@ -317,7 +317,7 @@ dialog.detail::backdrop { background: rgba(12,16,24,0.55); }
 .detail-head {
   display: flex; align-items: center; gap: 12px;
   padding: 14px 16px; border-bottom: 1px solid var(--border);
-  background: var(--blue); color: #fff;
+  background: var(--primary); color: #fff;
   border-radius: 9px 9px 0 0;
 }
 .detail-head strong { flex: 1; color: #fff; font-family: "Oswald", sans-serif; font-weight: 600; }
@@ -328,7 +328,7 @@ dialog.detail::backdrop { background: rgba(12,16,24,0.55); }
 .detail-body { padding: 4px 16px 8px; overflow-y: auto; overscroll-behavior: contain; max-height: 60vh; }
 .detail-body h4 {
   font-family: "Oswald", sans-serif; text-transform: uppercase;
-  letter-spacing: 0.06em; font-size: 0.74rem; color: var(--gold);
+  letter-spacing: 0.06em; font-size: 0.74rem; color: var(--accent);
   margin: 1.2em 0 0.2em;
 }
 .detail-body p, .detail-body li { font-size: 0.9rem; max-width: none; }
@@ -339,7 +339,7 @@ dialog.detail::backdrop { background: rgba(12,16,24,0.55); }
 .detail-foot a { font-size: 0.86rem; }
 .detail-done {
   font-family: "Oswald", sans-serif; font-size: 0.74rem; letter-spacing: 0.05em;
-  text-transform: uppercase; cursor: pointer; color: #fff; background: var(--blue);
+  text-transform: uppercase; cursor: pointer; color: #fff; background: var(--primary);
   border: none; border-radius: 5px; padding: 7px 14px;
 }
 
@@ -369,7 +369,7 @@ header.page-head .badge-draft { border: 1px solid rgba(255,255,255,0.5); }
 
 /* Banner on next.html explaining the stable-URL page. */
 .next-note {
-  background: var(--blue-tint); border-left: 3px solid var(--blue);
+  background: var(--primary-tint); border-left: 3px solid var(--primary);
   border-radius: 0 6px 6px 0; padding: 0.7em 1.1em;
   font-size: 0.9rem; max-width: none; margin: 0 0 1.6em;
 }
@@ -381,7 +381,7 @@ figure.pitchmap img { margin: 0; width: 100%; }
 figure.pitchmap .pitch-pin {
   position: absolute;
   transform: translate(-50%, -50%);
-  background: var(--gold); color: #2a2005;
+  background: var(--accent); color: #2a2005;
   font-family: "Oswald", sans-serif; font-weight: 600;
   font-size: 0.78rem; letter-spacing: 0.04em;
   padding: 4px 9px; border-radius: 4px;

@@ -35,7 +35,7 @@ const BANNER_CSS = `
 }
 .site-banner span { opacity: 0.72; }
 .site-banner a { color: #ffffff; text-decoration: underline; text-underline-offset: 2px; }
-.site-banner a:hover { color: var(--gold-tint); }
+.site-banner a:hover { color: var(--accent-tint); }
 `;
 
 export function page(shell: Shell, o: PageOpts): string {
@@ -90,9 +90,9 @@ a.card {
   padding: 16px 18px; text-decoration: none; color: var(--ink);
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
-a.card:hover { border-color: var(--blue); box-shadow: 0 2px 10px rgba(29,63,114,0.08); }
+a.card:hover { border-color: var(--primary); box-shadow: 0 2px 10px rgba(29,63,114,0.08); }
 a.card .card-title {
-  font-family: "Oswald", sans-serif; font-weight: 600; color: var(--blue); font-size: 1.05rem;
+  font-family: "Oswald", sans-serif; font-weight: 600; color: var(--primary); font-size: 1.05rem;
   display: flex; align-items: center; flex-wrap: wrap; gap: 6px;
 }
 a.card .card-desc { color: var(--muted); font-size: 0.88rem; line-height: 1.5; }

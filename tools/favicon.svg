@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Rugby ball">
-  <!-- Club blue ball with a gold outline, so it reads on both a light and a dark
+  <!-- Ball in the club's primary colour with an accent outline, so it reads on both a light and a dark
        browser tab. Tilted the way a ball sits in the hand. -->
   <g transform="rotate(-28 32 32)">
     <path d="M6 32 C14 10 50 10 58 32 C50 54 14 54 6 32 Z"
